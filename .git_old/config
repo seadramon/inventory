@@ -1,0 +1,52 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = git@gitlab.com:semarsakti/inventory.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "INV-9-web-master-ruangan-crud"]
+	remote = origin
+	merge = refs/heads/INV-9-web-master-ruangan-crud
+[branch "INV-10-web-master-merk-crud"]
+	remote = origin
+	merge = refs/heads/INV-10-web-master-merk-crud
+[branch "INV-19-api-inventaris-it-detail"]
+	remote = origin
+	merge = refs/heads/INV-19-api-inventaris-it-detail
+[branch "INV-18-api-inventaris-kantor-detail"]
+	remote = origin
+	merge = refs/heads/INV-18-api-inventaris-kantor-detail
+[branch "INV-16-web-create-and-edit-inventaris-it"]
+	remote = origin
+	merge = refs/heads/INV-16-web-create-and-edit-inventaris-it
+[branch "INV-27-web-generate-qr-code-inventaris"]
+	remote = origin
+	merge = refs/heads/INV-27-web-generate-qr-code-inventaris
+[branch "INV-32-api-form-perawatan-list"]
+	remote = origin
+	merge = refs/heads/INV-32-api-form-perawatan-list
+[branch "INV-33-api-form-perawatan-submit"]
+	remote = origin
+	merge = refs/heads/INV-33-api-form-perawatan-submit
+[branch "INV-31-web-crud-software"]
+	remote = origin
+	merge = refs/heads/INV-31-web-crud-software
+[branch "INV-39-dashboard-it"]
+	remote = origin
+	merge = refs/heads/INV-39-dashboard-it
+[branch "INV-40-web-report-inventaris-it"]
+	remote = origin
+	merge = refs/heads/INV-40-web-report-inventaris-it
+[branch "INV-38"]
+	remote = origin
+	merge = refs/heads/INV-38
+[branch "INV-41-web-report-maintenance-it"]
+	remote = origin
+	merge = refs/heads/INV-41-web-report-maintenance-it

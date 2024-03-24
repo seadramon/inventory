@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  #PHP Service
+  phpfpm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: wbinventory
+    container_name: phpfpm_wbinventory
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./scripts/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+      - ./:/var/www
+    networks:
+      - intra_net
+  # NGINX Service
+  nginx:
+    container_name: nginx_wbinventory
+    image: nginx:alpine
+    restart: unless-stopped
+    volumes:
+      - ./scripts/nginx/:/etc/nginx/conf.d
+      - ./:/var/www
+    ports:
+      - 80:80
+    networks:
+      - intra_net
+networks:
+  intra_net:
+    name: internal_network
